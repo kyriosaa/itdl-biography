@@ -68,7 +68,11 @@ function Home() {
                 <div className="posts">
                   <article>
                     <Link to="/biography" className="image">
-                      <img src="images/pic01.jpg" alt="" />
+                      <img
+                        src="images/biography-navigation.jpg"
+                        alt="An old book next to a cup of coffee"
+                        height={"210px"}
+                      />
                     </Link>
                     <h3>Biography</h3>
                     <ul className="actions">
@@ -81,7 +85,11 @@ function Home() {
                   </article>
                   <article>
                     <Link to="/timeline" className="image">
-                      <img src="images/pic02.jpg" alt="" />
+                      <img
+                        src="images/timeline-navigation.jpg"
+                        alt="A pocketwatch resting on a calendar"
+                        height={"210px"}
+                      />
                     </Link>
                     <h3>Timeline</h3>
                     <ul className="actions">
@@ -94,7 +102,11 @@ function Home() {
                   </article>
                   <article>
                     <Link to="/notable" className="image">
-                      <img src="images/pic03.jpg" alt="" />
+                      <img
+                        src="images/notable-navigation.jpg"
+                        alt="Library full of books"
+                        height={"210px"}
+                      />
                     </Link>
                     <h3>Notable Works</h3>
                     <ul className="actions">
@@ -107,7 +119,11 @@ function Home() {
                   </article>
                   <article>
                     <Link to="/chatbot" className="image">
-                      <img src="images/pic04.jpg" alt="" />
+                      <img
+                        src="images/aichatbot-navigation.jpg"
+                        alt="Hand holding up a hologram of a chatbot"
+                        height={"210px"}
+                      />
                     </Link>
                     <h3>AI Chatbot</h3>
                     <ul className="actions">
@@ -120,7 +136,11 @@ function Home() {
                   </article>
                   <article>
                     <Link to="/imagegen" className="image">
-                      <img src="images/pic05.jpg" alt="" />
+                      <img
+                        src="images/imagegen-navigation.jpg"
+                        alt="AI generated image"
+                        height={"210px"}
+                      />
                     </Link>
                     <h3>Image Generation</h3>
                     <ul className="actions">
@@ -133,7 +153,11 @@ function Home() {
                   </article>
                   <article>
                     <Link to="/notes" className="image">
-                      <img src="images/pic06.jpg" alt="" />
+                      <img
+                        src="images/notes-navigation.jpg"
+                        alt=""
+                        height={"210px"}
+                      />
                     </Link>
                     <h3>Notes</h3>
                     <ul className="actions">
