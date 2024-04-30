@@ -23,8 +23,7 @@ function Home() {
               {/* -- Header -- */}
               <header id="header">
                 <Link to="/" className="logo">
-                  <strong>Interactive Technology and Digital Learning</strong>
-                  <br />
+                  <strong>Interactive Technology and Digital Learning </strong>-
                   Final Project Demo
                 </Link>
               </header>
@@ -155,7 +154,7 @@ function Home() {
                     <Link to="/notes" className="image">
                       <img
                         src="images/notes-navigation.jpg"
-                        alt=""
+                        alt="Person writing on notes using a pencil"
                         height={"210px"}
                       />
                     </Link>

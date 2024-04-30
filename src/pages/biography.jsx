@@ -23,8 +23,7 @@ function Home() {
               {/* -- Header -- */}
               <header id="header">
                 <Link to="/" className="logo">
-                  <strong>Interactive Technology and Digital Learning</strong>
-                  <br />
+                  <strong>Interactive Technology and Digital Learning </strong>-
                   Final Project Demo
                 </Link>
                 {/* <ul className="icons">
