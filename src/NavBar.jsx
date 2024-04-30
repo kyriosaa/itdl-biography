@@ -46,7 +46,7 @@ function Navbar() {
               <br />
               Purit Hongjirakul (109990016)
               <br />
-              Grant Liu (110AT0001)
+              劉凱悦 (110AT0001)
               <br />
               許金財 (110AT0003)
             </div>

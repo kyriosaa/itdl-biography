@@ -6,7 +6,7 @@ function Home() {
   return (
     <div>
       <head>
-        <title>Timeline</title>
+        <title>Biography</title>
         <meta charset="utf-8" />
         <meta
           name="viewport"

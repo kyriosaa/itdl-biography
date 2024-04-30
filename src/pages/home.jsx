@@ -6,7 +6,7 @@ function Home() {
   return (
     <div>
       <head>
-        <title>Timeline</title>
+        <title>Home</title>
         <meta charset="utf-8" />
         <meta
           name="viewport"
@@ -55,7 +55,7 @@ function Home() {
                 <span className="image object">
                   <img
                     src="images/lynshunliensung-profile.jpg"
-                    alt="Photo of Lyn Shun-Lien Sung holding a book"
+                    alt="Lyn Shun-Lien Sung holding a book"
                   />
                 </span>
               </section>
@@ -138,7 +138,7 @@ function Home() {
                     <Link to="/imagegen" className="image">
                       <img
                         src="images/imagegen-navigation.jpg"
-                        alt="AI generated image"
+                        alt="AI generated"
                         height={"210px"}
                       />
                     </Link>
