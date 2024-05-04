@@ -6,8 +6,7 @@ import OpenAI from "openai";
 // import ChatGptPic from "../images/chatgpt.jpg";
 
 const openai = new OpenAI({
-  // apiKey: "sk-proj-toc7CHiZlRVFl8WppVF0T3BlbkFJbVIVfyEhAC64crcNBGIE",
-  apiKey: process.env["REACT_APP_OPENAI_API_KEY"],
+  apiKey: process.env.REACT_APP_OPENAI_API_KEY,
   dangerouslyAllowBrowser: true,
 });
 
