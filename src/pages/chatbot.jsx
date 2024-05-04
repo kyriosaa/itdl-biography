@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import Navbar from "../NavBar";
 import { Link } from "react-router-dom";
 import OpenAI from "openai";
-import UserPic from "../images/user.jpg";
-import ChatGptPic from "../images/chatgpt.jpg";
+// import UserPic from "../images/user.jpg";
+// import ChatGptPic from "../images/chatgpt.jpg";
 
 const openai = new OpenAI({
-  apiKey: "sk-proj-toc7CHiZlRVFl8WppVF0T3BlbkFJbVIVfyEhAC64crcNBGIE",
+  // apiKey: "sk-proj-toc7CHiZlRVFl8WppVF0T3BlbkFJbVIVfyEhAC64crcNBGIE",
+  apiKey: process.env["REACT_APP_OPENAI_API_KEY"],
   dangerouslyAllowBrowser: true,
 });
 
