@@ -2,41 +2,41 @@ import React from "react";
 import Navbar from "../NavBar";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import BookCreate from "../notes/BookCreate";
-import BookList from "../notes/BookList";
+import NoteCreate from "../notes/NoteCreate";
+import NoteList from "../notes/NoteList";
 
 function Notes() {
-  const [books, setBooks] = useState([]);
+  const [notes, setNotes] = useState([]);
 
-  const editBookById = (id, newTitle) => {
-    const updatedBooks = books.map((book) => {
-      if (book.id === id) {
-        return { ...book, title: newTitle };
+  const editNoteById = (id, newTitle) => {
+    const updatedNotes = notes.map((note) => {
+      if (note.id === id) {
+        return { ...note, title: newTitle };
       }
 
-      return book;
+      return note;
     });
 
-    setBooks(updatedBooks);
+    setNotes(updatedNotes);
   };
 
-  const deleteBookById = (id) => {
-    const updatedBooks = books.filter((book) => {
-      return book.id !== id;
+  const deleteNoteById = (id) => {
+    const updatedNotes = notes.filter((note) => {
+      return note.id !== id;
     });
 
-    setBooks(updatedBooks);
+    setNotes(updatedNotes);
   };
 
-  const handleCreateBook = (title) => {
-    const updatedBooks = [
-      ...books,
+  const handleCreateNote = (title) => {
+    const updatedNotes = [
+      ...notes,
       {
         id: Math.round(Math.random() * 10000),
         title: title,
       },
     ];
-    setBooks(updatedBooks);
+    setNotes(updatedNotes);
   };
 
   return (
@@ -71,13 +71,13 @@ function Notes() {
                 </header>
 
                 <p>
-                  <BookList
-                    books={books}
-                    onEdit={editBookById}
-                    onDelete={deleteBookById}
+                  <NoteList
+                    notes={notes}
+                    onEdit={editNoteById}
+                    onDelete={deleteNoteById}
                   />
                   <br />
-                  <BookCreate onCreate={handleCreateBook} />
+                  <NoteCreate onCreate={handleCreateNote} />
                 </p>
 
                 <hr className="major" />

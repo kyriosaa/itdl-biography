@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function BookCreate({ onCreate }) {
+function NoteCreate({ onCreate }) {
   const [title, setTitle] = useState("");
 
   const handleChange = (event) => {
@@ -26,4 +26,4 @@ function BookCreate({ onCreate }) {
   );
 }
 
-export default BookCreate;
+export default NoteCreate;

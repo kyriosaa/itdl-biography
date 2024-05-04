@@ -1,11 +1,11 @@
 import { useState } from "react";
-import BookEdit from "./BookEdit";
+import NoteEdit from "./NoteEdit";
 
-function BookShow({ book, onEdit, onDelete }) {
+function NoteShow({ note, onEdit, onDelete }) {
   const [showEdit, setShowEdit] = useState(false);
 
   const handleDeleteClick = () => {
-    onDelete(book.id);
+    onDelete(note.id);
   };
 
   const handleEditClick = () => {
@@ -17,9 +17,9 @@ function BookShow({ book, onEdit, onDelete }) {
     onEdit(id, newTitle);
   };
 
-  let content = <h3>{book.title}</h3>;
+  let content = <h3>{note.title}</h3>;
   if (showEdit) {
-    content = <BookEdit onSubmit={handleSubmit} book={book} />;
+    content = <NoteEdit onSubmit={handleSubmit} note={note} />;
   }
 
   return (
@@ -38,4 +38,4 @@ function BookShow({ book, onEdit, onDelete }) {
   );
 }
 
-export default BookShow;
+export default NoteShow;

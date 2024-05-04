@@ -1,8 +1,8 @@
 import Navbar from "./NavBar";
 import { BrowserRouter as Router } from "react-router-dom";
 import { useState } from "react";
-import BookCreate from "./notes/BookCreate";
-import BookList from "./notes/BookList";
+import NoteCreate from "./notes/NoteCreate";
+import NoteList from "./notes/NoteList";
 
 function App() {
   <>
