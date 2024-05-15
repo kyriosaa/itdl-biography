@@ -43,7 +43,7 @@ function Chatbot() {
       .catch((error) => console.log(error));
   };
   return (
-    <div>
+    <div style={{ backgroundColor: "white" }}>
       <head>
         <title>Notes</title>
         <meta charset="utf-8" />

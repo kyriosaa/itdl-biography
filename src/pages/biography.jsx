@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div>
+    <div style={{ backgroundColor: "white" }}>
       <head>
         <title>Biography</title>
         <meta charset="utf-8" />

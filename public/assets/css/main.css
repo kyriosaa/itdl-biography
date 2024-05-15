@@ -2208,6 +2208,15 @@ button.none,
   text-align: left;
   box-shadow: inset 0 0 0 2px #ffffff;
 }
+input[type="submit"].tl,
+input[type="reset"].tl,
+input[type="button"].tl,
+button.tl,
+.button.tl {
+  font-size: 1.2em;
+  text-align: left;
+  box-shadow: inset 0 0 0 2px #ffffff;
+}
 input[type="submit"].large,
 input[type="reset"].large,
 input[type="button"].large,

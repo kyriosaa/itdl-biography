@@ -2,8 +2,8 @@ import React from "react";
 import Navbar from "../NavBar";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import NoteCreate from "../notes/NoteCreate";
-import NoteList from "../notes/NoteList";
+import NoteCreate from "../components/notes/NoteCreate";
+import NoteList from "../components/notes/NoteList";
 
 function Notes() {
   const [notes, setNotes] = useState([]);
@@ -40,7 +40,7 @@ function Notes() {
   };
 
   return (
-    <div>
+    <div style={{ backgroundColor: "white" }}>
       <head>
         <title>Notes</title>
         <meta charset="utf-8" />
