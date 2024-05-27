@@ -68,6 +68,12 @@ function Notes() {
               <section>
                 <header className="main">
                   <h1>Notes</h1>
+                  <strong>
+                    You can use this area to create, edit, and delete notes!
+                    <br />
+                    (Since we did not create a database for the notes, please
+                    note that refreshing the page will remove the notes)
+                  </strong>
                 </header>
 
                 <p>

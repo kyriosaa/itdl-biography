@@ -1,3 +1,4 @@
+import { Typography } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -50,12 +51,16 @@ function Navbar() {
               <br />
               Vipatr Kuptasanti (110AT0003)
             </div>
+
             <br />
+
             <div>
               HTML template by:
               <Link to="https://html5up.net"> HTML5 UP</Link>
             </div>
+
             <br />
+
             <div>
               Project created for Interactive Technology and Digital Learning
               class.

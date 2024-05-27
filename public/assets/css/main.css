@@ -3137,17 +3137,52 @@ input:focus {
   padding-top: 0;
 }
 
-.user_msg {
+/* .user_msg {
   display: inline-flex;
   background-color: #424549;
   opacity: 0.6;
   color: #ffffff;
   padding: 15px;
-  border-radius: 25px;
-}
+  border-radius: 10px;
+} */
 
 div.chat,
 .div.chat {
   background-color: #424549;
   opacity: 0.6;
+}
+
+.home-container {
+  background-color: white;
+  padding: 20px;
+}
+
+.chat-container {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.chat-header {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.chat-messages {
+  margin-bottom: 20px;
+}
+
+.user-msg,
+.chatgpt-msg {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.user-msg img,
+.chatgpt-msg img {
+  margin-right: 10px;
 }

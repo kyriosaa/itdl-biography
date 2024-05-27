@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "../NavBar";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import TimelineAccordion from "../components/timeline/TimelineAccordion";
 
 function Timeline() {
@@ -132,7 +131,9 @@ function Timeline() {
               <section>
                 <header className="main">
                   <h1>Timeline</h1>
+                  <strong>Let's take a look at a timeline of her life</strong>
                 </header>
+                <br />
                 <TimelineAccordion items={items} />
               </section>
             </div>

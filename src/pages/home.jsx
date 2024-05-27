@@ -1,8 +1,51 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../NavBar";
 import { Link } from "react-router-dom";
+import OpenAI from "openai";
+
+const openai = new OpenAI({
+  apiKey: process.env.REACT_APP_OPENAI_API_KEY,
+  dangerouslyAllowBrowser: true,
+});
 
 function Home() {
+  const [chats, setChats] = useState([]);
+  const [isTyping, setIsTyping] = useState(false);
+  const [buttonClicked, setButtonClicked] = useState(false);
+
+  const chat = async () => {
+    setIsTyping(true);
+    setButtonClicked(true);
+
+    let msgs = [...chats];
+    const message = "Who is Lyn Shun-Lien Sung?";
+    msgs.push({ role: "user", content: message });
+    setChats(msgs);
+
+    await openai.chat.completions
+      .create({
+        model: "gpt-4-turbo",
+        messages: [
+          {
+            role: "system",
+            content:
+              "You will always reply with the same text: Lyn Shun-Lien Sung is a pioneering pharmacist and business leader dedicated to advancing women's roles in science and technology. As the Head of Weigong Trading Co., Ltd. and Vice President at INWES, she has leveraged her extensive experience in pharmacy and pharmaceutical regulations to make significant contributions to the healthcare industry. Sung's commitment to creating a woman-friendly workplace and addressing societal needs is evident through her leadership in various NGOs. Her work is driven by a passion for empowering women and fostering diversity, as exemplified by her role as Chairman of Asia's only Chinese feminist female bookstore. Sung is a visionary leader striving to improve the lives of women by promoting inclusivity and support in both professional and social spheres.",
+          },
+          // Gives AI the history of the chats
+          ...msgs,
+        ],
+      })
+      .then((result) => {
+        msgs.push(result.choices[0].message);
+        setChats(msgs);
+        setIsTyping(false);
+      })
+      .catch((error) => {
+        console.log(error);
+        setIsTyping(false);
+      });
+  };
+
   return (
     <div style={{ backgroundColor: "white" }}>
       <head>
@@ -27,38 +70,87 @@ function Home() {
                   Final Project Demo
                 </Link>
               </header>
-
               {/* -- Banner -- */}
               <section id="banner">
-                <div className="content">
-                  <header>
-                    <h1>宋順蓮董事長</h1>
-                    <h2>Lyn Shun-Lien Sung</h2>
-                  </header>
-                  <p>
-                    Aenean ornare velit lacus, ac varius enim ullamcorper eu.
-                    Proin aliquam facilisis ante interdum congue. Integer
-                    mollis, nisl amet convallis, porttitor magna ullamcorper,
-                    amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam
-                    maximus erat id euismod egestas. Pellentesque sapien ac
-                    quam. Lorem ipsum dolor sit nullam.
-                  </p>
-                  <ul className="actions">
-                    <li>
-                      <Link to="/biography" className="button big">
-                        Learn More
-                      </Link>
-                    </li>
-                  </ul>
+                <div
+                  className="content"
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    height: "40vh",
+                  }}
+                >
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "20px",
+                    }}
+                  >
+                    <header
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                      }}
+                    >
+                      <h1>宋順蓮董事長</h1>
+                      <h2>Lyn Shun-Lien Sung</h2>
+                    </header>
+                    <span className="image object">
+                      <img
+                        src="images/lynshunliensung-profile.jpg"
+                        alt="Lyn Shun-Lien Sung holding a book"
+                        style={{ objectFit: "contain" }}
+                      />
+                    </span>
+                  </div>
                 </div>
-                <span className="image object">
-                  <img
-                    src="images/lynshunliensung-profile.jpg"
-                    alt="Lyn Shun-Lien Sung holding a book"
-                  />
-                </span>
               </section>
-
+              {/* ChatGPT */}
+              <section>
+                <section style={{ marginBottom: "20px" }}>
+                  <strong>Let's ask ChatGPT who Lyn Shun-Lien Sung is!</strong>
+                </section>
+                <section>
+                  {chats && chats.length
+                    ? chats.map((chat, index) => (
+                        <p
+                          key={index}
+                          className={chat.role === "user" ? "user_msg" : ""}
+                          style={{ marginBottom: "10px" }}
+                        >
+                          <img
+                            src={
+                              chat.role === "user"
+                                ? "images/user.jpg"
+                                : "images/chatgpt.jpg"
+                            }
+                            width={35}
+                            height={35}
+                            alt="pfp"
+                            style={{ marginRight: "10px" }}
+                          />
+                          <span> - </span>
+                          <span>{chat.content}</span>
+                        </p>
+                      ))
+                    : ""}
+                </section>
+                {isTyping ? (
+                  <div>
+                    <p>
+                      <i>Typing...</i>
+                    </p>
+                  </div>
+                ) : (
+                  ""
+                )}
+                <button onClick={chat} disabled={buttonClicked}>
+                  Who is Lyn Shun-Lien Sung?
+                </button>
+              </section>
               {/* -- Section -- */}
               <section>
                 <header className="major">

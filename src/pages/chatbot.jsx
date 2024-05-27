@@ -45,7 +45,7 @@ function Chatbot() {
   return (
     <div style={{ backgroundColor: "white" }}>
       <head>
-        <title>Notes</title>
+        <title>Chatbot</title>
         <meta charset="utf-8" />
         <meta
           name="viewport"
@@ -84,8 +84,18 @@ function Chatbot() {
                             key={index}
                             className={chat.role === "user" ? "user_msg" : ""}
                           >
-                            <span>{chat.role}</span>
-                            <span>:</span>
+                            {/* <span>{chat.role}</span> */}
+                            <img
+                              src={
+                                chat.role === "user"
+                                  ? "images/user.jpg"
+                                  : "images/chatgpt.jpg"
+                              }
+                              width={35}
+                              height={35}
+                              alt="pfp"
+                            />
+                            <span> - </span>
                             <span>{chat.content}</span>
                           </p>
                         ))
@@ -105,6 +115,7 @@ function Chatbot() {
                   <form onSubmit={(e) => chat(e, message)}>
                     <input
                       type="text"
+                      autoComplete="off"
                       name="message"
                       value={message}
                       placeholder="Send a message"

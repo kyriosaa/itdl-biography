@@ -1,3 +1,4 @@
+import { Divider } from "@mui/material";
 import { useState } from "react";
 import { GoChevronDown, GoChevronRight } from "react-icons/go";
 
@@ -39,6 +40,7 @@ function TimelineAccordion({ items }) {
             {item.photo}
           </div>
         )}
+        <Divider />
       </div>
     );
   });
