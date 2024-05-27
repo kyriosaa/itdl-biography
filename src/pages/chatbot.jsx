@@ -72,7 +72,7 @@ function Chatbot() {
                 <strong>
                   This is a chatbot that you can use to ask questions! Try
                   typing any question in and see what it says back!
-                </strong>
+                </strong>{" "}
                 <br />
                 <br />
                 <br />
@@ -123,6 +123,7 @@ function Chatbot() {
                     />
                   </form>
                 </div>
+                <hr className="major" />
               </section>
             </div>
           </div>

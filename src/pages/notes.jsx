@@ -71,10 +71,11 @@ function Notes() {
                   <strong>
                     You can use this area to create, edit, and delete notes!
                     <br />
-                    (Since we did not create a database for the notes, please
-                    note that refreshing the page will remove the notes)
+                    (Since we did not create a database for the notes, please be
+                    aware that refreshing the page will remove the notes)
                   </strong>
                 </header>
+                <hr className="major" />
 
                 <p>
                   <NoteList

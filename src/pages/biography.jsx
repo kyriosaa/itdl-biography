@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../NavBar";
 import { Link } from "react-router-dom";
 
-function Home() {
+function Biography() {
   return (
     <div style={{ backgroundColor: "white" }}>
       <head>
@@ -66,37 +66,20 @@ function Home() {
                 </span>
 
                 <p>
-                  Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
-                  primis in faucibus. Pellentesque venenatis dolor imperdiet
-                  dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas
-                  enim auctor sit amet. Pellentesque leo mauris, consectetur id
-                  ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia
-                  malesuada et a elit. Donec urna ex, lacinia in purus ac,
-                  pretium pulvinar mauris. Curabitur sapien risus, commodo eget
-                  turpis at, elementum convallis elit. Pellentesque enim turpis,
-                  hendrerit.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  dapibus rutrum facilisis. className aptent taciti sociosqu ad
-                  litora torquent per conubia nostra, per inceptos himenaeos.
-                  Etiam tristique libero eu nibh porttitor fermentum. Nullam
-                  venenatis erat id vehicula viverra. Nunc ultrices eros ut
-                  ultricies condimentum. Mauris risus lacus, blandit sit amet
-                  venenatis non, bibendum vitae dolor. Nunc lorem mauris,
-                  fringilla in aliquam at, euismod in lectus. Pellentesque
-                  habitant morbi tristique senectus et netus et malesuada fames
-                  ac turpis egestas. In non lorem sit amet elit placerat
-                  maximus. Pellentesque aliquam maximus risus, vel sed vehicula.
-                </p>
-                <p>
-                  Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                  Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
-                  Praesent rutrum sem diam, vitae egestas enim auctor sit amet.
-                  Pellentesque leo mauris, consectetur id ipsum sit amet,
-                  fersapien risus, commodo eget turpis at, elementum convallis
-                  elit. Pellentesque enim turpis, hendrerit tristique lorem
-                  ipsum dolor.
+                  Lyn Shun-Lien Sung is a pioneering pharmacist and business
+                  leader dedicated to advancing women's roles in science and
+                  technology. As the Head of Weigong Trading Co., Ltd. and Vice
+                  President at INWES, she has leveraged her extensive experience
+                  in pharmacy and pharmaceutical regulations to make significant
+                  contributions to the healthcare industry. Sung's commitment to
+                  creating a woman-friendly workplace and addressing societal
+                  needs is evident through her leadership in various NGOs. Her
+                  work is driven by a passion for empowering women and fostering
+                  diversity, as exemplified by her role as Chairman of Asia's
+                  only Chinese feminist female bookstore. Sung is a visionary
+                  leader striving to improve the lives of women by promoting
+                  inclusivity and support in both professional and social
+                  spheres.
                 </p>
 
                 <hr className="major" />
@@ -104,115 +87,45 @@ function Home() {
                 <p>
                   {/* -- Section -- */}
                   <section>
-                    <header className="major">
-                      <h2>Notable</h2>
-                    </header>
-                    <div className="features">
-                      <article>
-                        <span className="icon fa-gem"></span>
-                        <div className="content">
-                          <h3>Portitor ullamcorper</h3>
-                          <p>
-                            Aenean ornare velit lacus, ac varius enim lorem
-                            ullamcorper dolore. Proin aliquam facilisis ante
-                            interdum. Sed nulla amet lorem feugiat tempus
-                            aliquam.
-                          </p>
-                        </div>
-                      </article>
-                      <article>
-                        <span className="icon solid fa-paper-plane"></span>
-                        <div className="content">
-                          <h3>Sapien veroeros</h3>
-                          <p>
-                            Aenean ornare velit lacus, ac varius enim lorem
-                            ullamcorper dolore. Proin aliquam facilisis ante
-                            interdum. Sed nulla amet lorem feugiat tempus
-                            aliquam.
-                          </p>
-                        </div>
-                      </article>
-                      <article>
-                        <span className="icon solid fa-rocket"></span>
-                        <div className="content">
-                          <h3>Quam lorem ipsum</h3>
-                          <p>
-                            Aenean ornare velit lacus, ac varius enim lorem
-                            ullamcorper dolore. Proin aliquam facilisis ante
-                            interdum. Sed nulla amet lorem feugiat tempus
-                            aliquam.
-                          </p>
-                        </div>
-                      </article>
-                      <article>
-                        <span className="icon solid fa-signal"></span>
-                        <div className="content">
-                          <h3>Sed magna finibus</h3>
-                          <p>
-                            Aenean ornare velit lacus, ac varius enim lorem
-                            ullamcorper dolore. Proin aliquam facilisis ante
-                            interdum. Sed nulla amet lorem feugiat tempus
-                            aliquam.
-                          </p>
-                        </div>
-                      </article>
-                    </div>
+                    <h2>Organizations</h2>
+
+                    <li>
+                      International Network for Women in Science and Technology
+                    </li>
+                    <li>
+                      Executive Supervisor of the Taiwan Society of Women in
+                      Science and Technology
+                    </li>
+                    <li>
+                      Supervisor of the National Federation of Taiwan Women’s
+                      Groups
+                    </li>
+                    <li>
+                      Taiwan Director of the Society for Pharmaceutical
+                      Regulations
+                    </li>
+                    <li>
+                      Managing Director of the China Jingkang Pharmaceutical
+                      Foundation
+                    </li>
+                    <li>
+                      Chairman of the only Chinese feminist female bookstore in
+                      Asia
+                    </li>
                   </section>
                 </p>
 
                 <hr className="major" />
 
-                <h2>Magna etiam veroeros</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  dapibus rutrum facilisis. className aptent taciti sociosqu ad
-                  litora torquent per conubia nostra, per inceptos himenaeos.
-                  Etiam tristique libero eu nibh porttitor fermentum. Nullam
-                  venenatis erat id vehicula viverra. Nunc ultrices eros ut
-                  ultricies condimentum. Mauris risus lacus, blandit sit amet
-                  venenatis non, bibendum vitae dolor. Nunc lorem mauris,
-                  fringilla in aliquam at, euismod in lectus. Pellentesque
-                  habitant morbi tristique senectus et netus et malesuada fames
-                  ac turpis egestas. In non lorem sit amet elit placerat
-                  maximus. Pellentesque aliquam maximus risus, vel sed vehicula.
-                </p>
-                <p>
-                  Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                  Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
-                  Praesent rutrum sem diam, vitae egestas enim auctor sit amet.
-                  Pellentesque leo mauris, consectetur id ipsum sit amet,
-                  fersapien risus, commodo eget turpis at, elementum convallis
-                  elit. Pellentesque enim turpis, hendrerit tristique lorem
-                  ipsum dolor.
-                </p>
+                <h2>Professional Skills</h2>
 
-                <hr className="major" />
-
-                <h2>Lorem aliquam bibendum</h2>
-                <p>
-                  Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
-                  primis in faucibus. Pellentesque venenatis dolor imperdiet
-                  dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas
-                  enim auctor sit amet. Pellentesque leo mauris, consectetur id
-                  ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia
-                  malesuada et a elit. Donec urna ex, lacinia in purus ac,
-                  pretium pulvinar mauris. Curabitur sapien risus, commodo eget
-                  turpis at, elementum convallis elit. Pellentesque enim turpis,
-                  hendrerit.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  dapibus rutrum facilisis. className aptent taciti sociosqu ad
-                  litora torquent per conubia nostra, per inceptos himenaeos.
-                  Etiam tristique libero eu nibh porttitor fermentum. Nullam
-                  venenatis erat id vehicula viverra. Nunc ultrices eros ut
-                  ultricies condimentum. Mauris risus lacus, blandit sit amet
-                  venenatis non, bibendum vitae dolor. Nunc lorem mauris,
-                  fringilla in aliquam at, euismod in lectus. Pellentesque
-                  habitant morbi tristique senectus et netus et malesuada fames
-                  ac turpis egestas. In non lorem sit amet elit placerat
-                  maximus. Pellentesque aliquam maximus risus, vel sed vehicula.
-                </p>
+                <li>
+                  Qualified cosmetics safety assessor (certificate number issued
+                  on December 1, 2019: SA-P-1081025007)
+                </li>
+                <li>Cosmetics labeling and advertising</li>
+                <li>Product registration</li>
+                <li>Safety assessment</li>
               </section>
             </div>
           </div>
@@ -230,4 +143,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Biography;

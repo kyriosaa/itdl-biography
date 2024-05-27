@@ -131,9 +131,8 @@ function Timeline() {
               <section>
                 <header className="main">
                   <h1>Timeline</h1>
-                  <strong>Let's take a look at a timeline of her life</strong>
                 </header>
-                <br />
+                <hr className="major" />
                 <TimelineAccordion items={items} />
               </section>
             </div>

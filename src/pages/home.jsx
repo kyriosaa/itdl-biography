@@ -141,7 +141,7 @@ function Home() {
                 {isTyping ? (
                   <div>
                     <p>
-                      <i>Typing...</i>
+                      <i>Thinking...</i>
                     </p>
                   </div>
                 ) : (
