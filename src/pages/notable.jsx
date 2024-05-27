@@ -63,15 +63,17 @@ function Notable() {
                 <h2>Feminism Bookstore</h2>
 
                 <p>
-                  As the first feminist bookstore in the Chinese-speaking area,
-                  Lyn Shun-Lien Sung's store takes the promotion of gender
-                  equality as its own responsibility. After years of hard work,
-                  it was classified as a Taiwanese women's cultural landmark in
-                  2007 and became a popular destination for foreign tourists, a
-                  place of pilgrimage for those who care about gender issues. In
-                  addition to selling books, the Women's Bookstore also
-                  cooperates with elementary and middle schools to promote the
-                  "Gender-Friendly Dandelion Project".
+                  <a href="https://maps.app.goo.gl/qxUPE47bnP4t7d127?g_st=il">
+                    女書店 (Fembooks)
+                  </a>{" "}
+                  , the first feminist bookstore in the area, takes the
+                  promotion of gender equality as its own responsibility. After
+                  years of hard work, it was classified as a Taiwanese women's
+                  cultural landmark in 2007 and became a popular destination for
+                  foreign tourists, a place of pilgrimage for those who care
+                  about gender issues. In addition to selling books, the Women's
+                  Bookstore also cooperates with elementary and middle schools
+                  to promote the "Gender-Friendly Dandelion Project".
                 </p>
               </section>
             </div>
