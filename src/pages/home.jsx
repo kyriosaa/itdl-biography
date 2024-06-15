@@ -4,8 +4,7 @@ import { Link } from "react-router-dom";
 import OpenAI from "openai";
 
 const openai = new OpenAI({
-  apiKey: "sk-proj-EPMFOaeHXu5X41cPMdUjT3BlbkFJ9e2rBVQqMqkJiK3bIYo3",
-  // apiKey: process.env.REACT_APP_OPENAI_API_KEY,
+  apiKey: process.env.REACT_APP_OPENAI_API_KEY,
   dangerouslyAllowBrowser: true,
 });
 
