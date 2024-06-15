@@ -18,6 +18,7 @@ const ImageGenerator = () => {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+
           Authorization: process.env.REACT_APP_DALLE_API_KEY,
           "User-Agent": "Chrome",
         },

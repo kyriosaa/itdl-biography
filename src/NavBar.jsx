@@ -53,12 +53,12 @@ function Navbar() {
 
             <br />
 
-            <div>
+            {/* <div>
               HTML template by:
               <Link to="https://html5up.net"> HTML5 UP</Link>
             </div>
 
-            <br />
+            <br /> */}
 
             <div>
               Project created for Interactive Technology and Digital Learning

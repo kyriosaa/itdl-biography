@@ -37,6 +37,7 @@ function ImageGen() {
 
                 <ImageGenerator />
               </section>
+              <hr className="major" />
             </div>
           </div>
           <Navbar />
