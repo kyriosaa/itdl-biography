@@ -66,15 +66,13 @@ function Notes() {
 
               {/* -- Content -- */}
               <section>
-                <header className="main">
-                  <h1>Notes</h1>
-                  <strong>
-                    You can use this area to create, edit, and delete notes!
-                    <br />
-                    (Since we did not create a database for the notes, please be
-                    aware that refreshing the page will remove the notes)
-                  </strong>
-                </header>
+                <h1>Notes</h1>
+                <p>
+                  You can use this area to create, edit, and delete notes!
+                  <br />
+                  (Since we did not create a database for the notes, please be
+                  aware that refreshing the page will remove the notes)
+                </p>
                 <hr className="major" />
 
                 <>

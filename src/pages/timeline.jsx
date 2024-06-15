@@ -139,7 +139,13 @@ function Timeline() {
                 <header className="main">
                   <h1>Timeline</h1>
                 </header>
-                <hr className="major" />
+
+                <span className="image main">
+                  <img src="images/timelineheader.jpg" alt="" />
+                </span>
+
+                <p>Let's take a look at a timeline of her career.</p>
+
                 <TimelineAccordion items={items} />
               </section>
             </div>

@@ -69,13 +69,11 @@ function Chatbot() {
               {/* -- Content -- */}
               <section>
                 <h1>AI Chatbot</h1>
-                <strong>
+                <p>
                   This is a chatbot that you can use to ask questions! Try
                   typing any question in and see what it says back!
-                </strong>{" "}
-                <br />
-                <br />
-                <br />
+                </p>{" "}
+                <hr className="major" />
                 <div>
                   <section>
                     {chats && chats.length

@@ -31,9 +31,13 @@ function ImageGen() {
 
               {/* -- Content -- */}
               <section>
-                <header className="main">
-                  <h1>AI Image Generator</h1>
-                </header>
+                <h1>AI Image Generator</h1>
+                <p>
+                  This is a DALL-E image generator! You can type in any prompt
+                  in the text box and the website will generate an image
+                  following your prompt!
+                </p>
+                <hr className="major" />
 
                 <ImageGenerator />
               </section>
