@@ -77,7 +77,7 @@ function Notes() {
                 </header>
                 <hr className="major" />
 
-                <p>
+                <>
                   <NoteList
                     notes={notes}
                     onEdit={editNoteById}
@@ -85,7 +85,7 @@ function Notes() {
                   />
                   <br />
                   <NoteCreate onCreate={handleCreateNote} />
-                </p>
+                </>
 
                 <hr className="major" />
               </section>

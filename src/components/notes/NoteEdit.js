@@ -15,8 +15,15 @@ function NoteEdit({ note, onSubmit }) {
   return (
     <form onSubmit={handleSubmit} className="major">
       <h3>Edit note</h3>
-      <input className="input" value={title} onChange={handleChange} />
-      <button className="button big">Save</button>
+      <input
+        type="text"
+        className="input"
+        value={title}
+        onChange={handleChange}
+      />
+      <button className="button small" style={{ marginTop: 15 }}>
+        Save
+      </button>
     </form>
   );
 }

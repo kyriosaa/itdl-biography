@@ -62,7 +62,7 @@ function Biography() {
                 </header>
 
                 <span className="image main">
-                  <img src="images/pic11.jpg" alt="" />
+                  <img src="images/lynbiographyheader2.jpg" alt="" />
                 </span>
 
                 <p>
@@ -84,7 +84,7 @@ function Biography() {
 
                 <hr className="major" />
 
-                <p>
+                <>
                   {/* -- Section -- */}
                   <section>
                     <h2>Organizations</h2>
@@ -113,7 +113,7 @@ function Biography() {
                       Asia
                     </li>
                   </section>
-                </p>
+                </>
 
                 <hr className="major" />
 

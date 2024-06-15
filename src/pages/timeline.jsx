@@ -98,7 +98,14 @@ function Timeline() {
       label: "2021",
       content:
         "Became the Chairperson of the only Chinese feminist bookstore in Asia.",
-      photo: <span className="image object"></span>,
+      photo: (
+        <span className="image object">
+          <img
+            src="images/2021.jpg"
+            alt="Chairperson of the only Chinese feminist bookstore in Asia"
+          />
+        </span>
+      ),
     },
   ];
 

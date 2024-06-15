@@ -7,7 +7,7 @@ function Notable() {
     <div style={{ backgroundColor: "white" }}>
       <head>
         <title>Notable Works</title>
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, user-scalable=no"
@@ -36,7 +36,7 @@ function Notable() {
 
                 <hr className="major" />
 
-                <p>
+                <>
                   {/* -- Section -- */}
                   <section>
                     <h2>Founder of “Micro-work”</h2>
@@ -56,13 +56,13 @@ function Notable() {
                       their families and businesses.
                     </p>
                   </section>
-                </p>
+                </>
 
                 <hr className="major" />
 
                 <h2>Feminism Bookstore</h2>
 
-                <p>
+                <>
                   <a href="https://maps.app.goo.gl/qxUPE47bnP4t7d127?g_st=il">
                     女書店 (Fembooks)
                   </a>{" "}
@@ -74,7 +74,7 @@ function Notable() {
                   about gender issues. In addition to selling books, the Women's
                   Bookstore also cooperates with elementary and middle schools
                   to promote the "Gender-Friendly Dandelion Project".
-                </p>
+                </>
               </section>
             </div>
           </div>

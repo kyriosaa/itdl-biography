@@ -1,4 +1,3 @@
-import { Typography } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -28,7 +27,7 @@ function Navbar() {
               <Link to="/chatbot">AI Chatbot</Link>
             </li>
             <li>
-              <Link to="/imagegen">Image Generator</Link>
+              <Link to="/imagegen">AI Image Generator</Link>
             </li>
             <li>
               <Link to="/notes">Notes</Link>

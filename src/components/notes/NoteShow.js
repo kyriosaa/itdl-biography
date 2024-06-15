@@ -26,7 +26,11 @@ function NoteShow({ note, onEdit, onDelete }) {
     <div className="major">
       <div className="content">{content}</div>
       <div className="actions">
-        <button className="button small" onClick={handleEditClick}>
+        <button
+          className="button small"
+          onClick={handleEditClick}
+          style={{ marginRight: 10 }}
+        >
           Edit
         </button>
         <button className="button small" onClick={handleDeleteClick}>

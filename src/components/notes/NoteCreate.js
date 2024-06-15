@@ -17,10 +17,16 @@ function NoteCreate({ onCreate }) {
     <div className="major">
       <h3>Add a Note</h3>
       <form onSubmit={handleSubmit}>
-        <input className="input" value={title} onChange={handleChange} />
-        <br />
-        <br />
-        <button className="button small">Create</button>
+        <input
+          type="text"
+          className="input"
+          value={title}
+          onChange={handleChange}
+          placeholder="Write your note here"
+        />
+        <button className="button big" style={{ marginTop: 15 }}>
+          Create
+        </button>
       </form>
     </div>
   );

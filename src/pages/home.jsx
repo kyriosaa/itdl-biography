@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 import OpenAI from "openai";
 
 const openai = new OpenAI({
-  apiKey: process.env.REACT_APP_OPENAI_API_KEY,
+  apiKey: "sk-proj-EPMFOaeHXu5X41cPMdUjT3BlbkFJ9e2rBVQqMqkJiK3bIYo3",
+  // apiKey: process.env.REACT_APP_OPENAI_API_KEY,
   dangerouslyAllowBrowser: true,
 });
 
@@ -18,7 +19,7 @@ function Home() {
     setButtonClicked(true);
 
     let msgs = [...chats];
-    const message = "Who is Lyn Shun-Lien Sung?";
+    const message = "Hello! Can you tell me a little bit about yourself?";
     msgs.push({ role: "user", content: message });
     setChats(msgs);
 
@@ -29,7 +30,7 @@ function Home() {
           {
             role: "system",
             content:
-              "You will always reply with the same text: Lyn Shun-Lien Sung is a pioneering pharmacist and business leader dedicated to advancing women's roles in science and technology. As the Head of Weigong Trading Co., Ltd. and Vice President at INWES, she has leveraged her extensive experience in pharmacy and pharmaceutical regulations to make significant contributions to the healthcare industry. Sung's commitment to creating a woman-friendly workplace and addressing societal needs is evident through her leadership in various NGOs. Her work is driven by a passion for empowering women and fostering diversity, as exemplified by her role as Chairman of Asia's only Chinese feminist female bookstore. Sung is a visionary leader striving to improve the lives of women by promoting inclusivity and support in both professional and social spheres.",
+              "You will always reply with the same text: Hello! I am a pioneering pharmacist and business leader dedicated to advancing women's roles in science and technology. As the Head of Weigong Trading Co., Ltd. and Vice President at INWES, I have leveraged my extensive experience in pharmacy and pharmaceutical regulations to make significant contributions to the healthcare industry. I try my best to show my commitment to creating a woman-friendly workplace and addressing societal needs through my leadership in various NGOs. My work is driven by a passion for empowering women and fostering diversity, as exemplified by my role as Chairman of Asia's only Chinese feminist female bookstore. Some people say that I am a visionary leader striving to improve the lives of women by promoting inclusivity and support in both professional and social spheres!",
           },
           // Gives AI the history of the chats
           ...msgs,
@@ -50,7 +51,7 @@ function Home() {
     <div style={{ backgroundColor: "white" }}>
       <head>
         <title>Home</title>
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, user-scalable=no"
@@ -111,7 +112,7 @@ function Home() {
               {/* ChatGPT */}
               <section>
                 <section style={{ marginBottom: "20px" }}>
-                  <strong>Let's ask ChatGPT who Lyn Shun-Lien Sung is!</strong>
+                  <strong>Let's ask Lyn Shun-Lien Sung who she is!</strong>
                 </section>
                 <section>
                   {chats && chats.length
@@ -125,7 +126,7 @@ function Home() {
                             src={
                               chat.role === "user"
                                 ? "images/user.jpg"
-                                : "images/chatgpt.jpg"
+                                : "images/lynicon.png"
                             }
                             width={35}
                             height={35}
@@ -148,7 +149,7 @@ function Home() {
                   ""
                 )}
                 <button onClick={chat} disabled={buttonClicked}>
-                  Who is Lyn Shun-Lien Sung?
+                  Hello! Can you tell me a little bit about yourself?
                 </button>
               </section>
               {/* -- Section -- */}
