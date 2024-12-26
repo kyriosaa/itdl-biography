@@ -44,6 +44,9 @@ const ImageGenerator = () => {
           </div>
           <div className="loading">
             <div className={loading ? "loading-bar-full" : "loading-bar"}></div>
+
+            {/* I was gonna add a "Loading..." text but decided not to 
+              so I commented it out */}
             {/* <div className={loading ? "loading-text" : "display-none"}>
               Loading...
             </div> */}

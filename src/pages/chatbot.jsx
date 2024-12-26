@@ -29,7 +29,8 @@ function Chatbot() {
         messages: [
           {
             role: "system",
-            content: "You are a helpful assistant",
+            content:
+              "You are a helpful assistant that teaches anyone about a Taiwanese Scientist named Lyn Shun-Lien Sung",
           },
           // Gives AI the history of the chats
           ...chats,

@@ -1,10 +1,11 @@
 # Interactive Technology and Digital Learning Final Project
 
-**Description**
+## About
 
-A website that gives the biography of Lyn Shun-Lien Sung by incorporating different elements such as an AI chatbot using ChatGPT, image generation using DALL-E, and a notes editor.
+- A website that gives the biography of Lyn Shun-Lien Sung by incorporating different elements such as an AI chatbot using ChatGPT, image generation using DALL-E, and a notes editor.
+- Code written in JavaScript, CSS, SCSS, and HTML
 
-**Features**
+## Features
 
 - **Dynamic Elements:** Displays a dynamic website with interactable components.
 - **Navigation Bar:** Includes a navigation bar for quick navigation between pages.
