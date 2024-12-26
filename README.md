@@ -3,7 +3,8 @@
 ## About
 
 - A website that gives the biography of Lyn Shun-Lien Sung by incorporating different elements such as an AI chatbot using ChatGPT, image generation using DALL-E, and a notes editor.
-- Code written in JavaScript, CSS, SCSS, and HTML
+- JavaScript // HTML
+- React
 
 ## Features
 
